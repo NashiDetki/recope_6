@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Pacifico;
+  src: url(./fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: BadScript;
+  src: url(./fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(./fonts/Ubuntu-Light.woff2);
+  font-weight: 100;
+}
+
+.page{
+  margin: 0;
+}
+
+.main{
+  max-width: 960px;
+  min-width: 320px;
+  background-color: #4d2e28;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-size: 56px;
+  line-height: 100px;
+  color: #dad9d9;
+  text-decoration: underline;
+  font-family: Pacifico;
+}
+
+@media screen and (max-width: 700px){
+   .title {
+    font-size: 26px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+   }
+}
+
+.cards{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  height: 500px;
+  border-radius: 10px;
+  background-size: cover;
+  box-shadow: 6px 6px 10px #84614c;
+  transition: transform 0.2s linear 0.1s;
+  margin-bottom: 20px;
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.card__title{
+  color: #d3d0d0;
+  text-align: center;
+  margin: 0;
+  margin-top: 50px;
+  font-size: 25px;
+  font-family: BadScript;
+}
+
+.description{
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 80%;
+  font-weight: 100;
+  text-align: center;
+  color: #dad9d9;
+  font-family: Ubuntu;
+}
+
+.card__item_1{
+  background-image: url(./image/кекс.jpg);
+  background-position: -12px;
+}
+
+.card__item_2{
+  background-image: url(./image/печенье.jpg);
+  background-position: -12px;
+}
+
+.card__item_3{
+  background-image: url(./image/трюфель.jpg);
+  background-position: -12px;
+}
+
+.color-dark{
+  color: #492b25;
+}
+
+.color-dark_2{
+  color: #663329;
+}
+
+.color-dark_3{
+  color: #803030;
+}
+
+.font-weigth_bolt {
+  font-weight: 600;
+}
